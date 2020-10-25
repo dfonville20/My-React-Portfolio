@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" type="text/css" href="./CSS/reset.css" />
+    <link rel="stylesheet" type="text/css" href="reset.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" type="text/css" href="./CSS/style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Me</title>
@@ -27,28 +27,42 @@
 
     <div id="main-container" class="container">
       <section class="main-container">
-        <h1>About Me</h1>
+        <h1>Contact</h1>
 
-        <img
-          src="Assets/Images/200x200.jpg"
-          class="auth-image"
-          alt="Self Portrait"
-        />
-
-        <p>
-          My name is Dwayne Fonville and I am a student attending coding
-          bootcamp at UNC. Upon completion of the bootcamp I will be capable of
-          web design and app development. Originally from Atlantic Beach North
-          Carolina, I currently reside in Greensboro North Carolina but open to
-          relocating if necessary. I work for the United States Federal
-          Government as a Human Resources Specialist full time while also
-          attending the bootcamp.
-        </p>
-
-        <p>
-          I plan on using my newly acquired skillset to help any interested
-          organization achieve their goals both big and small.
-        </p>
+        <form id="contact-form">
+          <ul>
+            <li>
+              <label for="name">Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Bruce Wayne"
+                required="required"
+              />
+            </li>
+            <li>
+              <label for="email">Email</label>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="real@email.com"
+                required="required"
+              />
+            </li>
+            <li>
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Say something nice..."
+                required="required"
+              ></textarea>
+            </li>
+          </ul>
+          <input type="submit" name="submit" />
+        </form>
       </section>
 
       <section class="sidebar">
