@@ -1,5 +1,7 @@
-var NewComponent = React.createClass({
-  render: function () {
+import React, { Component } from "react";
+
+export default class Header extends Component {
+  render() {
     return (
       <header id="masthead">
         <div className="container">
@@ -14,5 +16,5 @@ var NewComponent = React.createClass({
         </div>
       </header>
     );
-  },
-});
+  }
+}

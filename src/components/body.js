@@ -1,5 +1,7 @@
-var NewComponent = React.createClass({
-  render: function () {
+import React, { Component } from "react";
+
+export default class Body extends Component {
+  render() {
     return (
       <div id="main-container" className="container">
         <section className="main-container">
@@ -54,5 +56,5 @@ var NewComponent = React.createClass({
         </section>
       </div>
     );
-  },
-});
+  }
+}
